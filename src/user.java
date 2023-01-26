@@ -22,8 +22,7 @@ public class user {
 
                 System.out.print("Giriş Yapıldı.");
             }
-            else 
-            {
+            else{
                 System.out.println("Hatalı Giriş. \n Şifrenizi değiştirmek istermisiniz. (y/n)");
                 control = inp.nextLine();
 
@@ -36,7 +35,7 @@ public class user {
 
                         System.out.println("Şifreniz bir öncekiyle aynı olamaz.");
                     }
-                    else {
+                    else{
                         System.out.println("Şifreniz başarıylar değiştirilmiştir. \n Yeni Şifreniz : "+ newPassword);
                     }
                 }
