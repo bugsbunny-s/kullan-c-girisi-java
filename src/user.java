@@ -10,8 +10,8 @@ public class user {
         System.out.print("Kayıt için Şifre giriniz : ");
         password=inp.nextLine();
 
-        if(userName != "" && password != "")
-        {
+        if(userName != "" && password != ""){
+
             System.out.print("Kullanıcı Adınız : ");
             String user = inp.nextLine();
 
@@ -19,24 +19,28 @@ public class user {
             String passw = inp.nextLine();
 
             if(userName.equals(user) && password.equals(passw)){
+
                 System.out.print("Giriş Yapıldı.");
             }
-            else {
+            else 
+            {
                 System.out.println("Hatalı Giriş. \n Şifrenizi değiştirmek istermisiniz. (y/n)");
                 control = inp.nextLine();
 
                 if(control.equals("y")|| control.equals("Y")){
+
                     System.out.print("Yeni Şifrenizi Yazınız : ");
                     String newPassword = inp.nextLine();
-                    
+
                     if(password.equals(newPassword)){
+
                         System.out.println("Şifreniz bir öncekiyle aynı olamaz.");
                     }
                     else {
                         System.out.println("Şifreniz başarıylar değiştirilmiştir. \n Yeni Şifreniz : "+ newPassword);
                     }
                 }
-                else {
+                else{
                     System.out.println("Tekrar deneyiniz.");
                 }
             }
