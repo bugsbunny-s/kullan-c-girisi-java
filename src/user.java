@@ -7,7 +7,7 @@ public class user {
         System.out.print("Kayıt için Kullanıcı Adı giriniz : ");
         userName = inp.nextLine();
 
-        System.out.print("Kayıt için Şifre giriniz :");
+        System.out.print("Kayıt için Şifre giriniz : ");
         password=inp.nextLine();
 
         if(userName != "" && password != "")
@@ -24,9 +24,11 @@ public class user {
             else {
                 System.out.println("Hatalı Giriş. \n Şifrenizi değiştirmek istermisiniz. (y/n)");
                 control = inp.nextLine();
+
                 if(control.equals("y")|| control.equals("Y")){
                     System.out.print("Yeni Şifrenizi Yazınız : ");
                     String newPassword = inp.nextLine();
+                    
                     if(password.equals(newPassword)){
                         System.out.println("Şifreniz bir öncekiyle aynı olamaz.");
                     }
